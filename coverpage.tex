@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, margin=1in]{geometry} % Page layout
+\usepackage{graphicx}                     % For images
+\usepackage{tabularx}                     % For flexible table columns
+\usepackage{booktabs}                     % For better table rules (toprule, midrule, bottomrule)
+\usepackage{titling}                      % For title customization (though used minimally here)
+\usepackage{xcolor}                       % For defining/using colors
+\usepackage{hyperref}                     % For hyperlinks (optional but good practice)
+
+% Remove page numbers for the cover page
+\pagenumbering{gobble}
+
+% Define colors
+\definecolor{aastu_blue}{RGB}{0, 51, 102} % AASTU blue color (approximation)
+
+% Adjust spacing between lines slightly if needed (optional)
+% \linespread{1.1} 
+
+\begin{document}
+
+\begin{center} % Center the top block
+
+    % University Logo - Make sure 'aastulogo.png' is in the same directory or provide the correct path
+    \includegraphics[width=2.5in]{aastu.png} 
+    \vspace{1em} % Add some space after the logo
+
+    % University, College, Department Info
+    {\huge\bfseries\color{aastu_blue} Addis Ababa Science and Technology University}\\[0.5em]
+    {\Large\bfseries College of Engineering}\\[0.3em]
+    {\Large\bfseries Department of Software Engineering}
+    \vspace{2.5em} % Space before course info
+
+    % Course and Assignment Info
+    {\large\bfseries Software Evolution and Maintenance in Software Engineering Course}\\[0.3em]
+    {\large\bfseries Assignment 1: Group Assignment}
+    \vspace{2.5em} % Space before assignment title
+
+    % Assignment Title
+    {\LARGE\bfseries Title: Reasons for Code Refactoring}
+    \vspace{3em} % Space before student list
+
+\end{center} % End of centered top block
+
+\begin{center} % Center the table
+    % Student information table
+    \renewcommand{\arraystretch}{1.2} % Increase row spacing slightly for readability
+    \begin{tabularx}{0.8\textwidth}{@{}>{\bfseries}l X @{}} % Use tabularx, 80% text width, bold names, flexible ID col
+        \toprule
+        Name               & ID           \\ 
+        \midrule
+        Kirubel Ateka      & ETS0734/13   \\
+        Kirubel Dagnchew   & ETS0735/13   \\
+        Laelay Temesgen    & ETS0746/13   \\
+        Natnael Endale     & ETS1008/13   \\
+        Dessalegn Sendek   & ETS1553/13   \\
+        Mitiku Abebe       & ETS0904/13   \\
+        Natnael Mulugeta   & ETS1020/13   \\
+        \bottomrule
+    \end{tabularx}
+\end{center}
+
+\vfill % Pushes the following content to the bottom
+
+\begin{flushright} % Right-align submission info
+    \large % Slightly larger font for submission details
+    \textbf{Submitted to:} \underline{\hspace{5cm}} \\[1em] % Instructor line
+    \textbf{Date:} April 02, 2025 % Submission Date
+\end{flushright}
+\vspace{1cm} % Add a little space from the absolute bottom margin
+
+\end{document}
